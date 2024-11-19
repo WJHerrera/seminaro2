@@ -1,20 +1,25 @@
-<ion-header [translucent]="true">
+<!-- Sección del encabezado -->
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Elige una opción</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<!-- Contenido principal de la página -->
+<ion-content class="selection-page">
+  <div class="selection-container">
+    <h1 class="welcome-text">Hello, Friend</h1>
+    <h2>selecciona:</h2>
+    <ion-button expand="block" class="button" color="light" (click)="goToPerfil('perfil')">
+      Perfil
+    </ion-button>
+    <ion-button expand="block" class="button" color="light" (click)="goToUsuario('usuario')">
+      Usuario
+    </ion-button>
+    <ion-button expand="block" class="button" color="light" (click)="goToRol('rol')">
+      Rol
+    </ion-button>
   </div>
 </ion-content>
+
